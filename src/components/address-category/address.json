@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_address_category_addresses",
+  "info": {
+    "displayName": "Address",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "address_misc": {
+      "type": "string"
+    }
+  }
+}

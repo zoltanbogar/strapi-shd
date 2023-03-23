@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_product_section_content_product_section_contents",
+  "info": {
+    "displayName": "Product_section_content",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Section_Title": {
+      "type": "string"
+    },
+    "Section_body": {
+      "type": "text"
+    },
+    "Section_Image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "videos"
+      ]
+    }
+  }
+}
