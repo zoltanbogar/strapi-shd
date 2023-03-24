@@ -9,5 +9,13 @@ export default ({ env }) => ({
       password: env('DATABASE_PASSWORD', 'postgres'),
       ssl: env.bool('DATABASE_SSL', false),
     },
+    pool: {
+      min: 0,
+      max: 10,
+      idleTimeoutMillis: 30000000,
+      createTimeoutMillis: 30000000,
+      acquireTimeoutMillis: 30000000,
+      propagateCreateError: false,
+    },
   },
 });
