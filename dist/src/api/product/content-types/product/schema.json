@@ -1,0 +1,113 @@
+{
+    "kind": "collectionType",
+    "collectionName": "products",
+    "info": {
+        "singularName": "product",
+        "pluralName": "products",
+        "displayName": "Product",
+        "description": ""
+    },
+    "options": {
+        "draftAndPublish": true
+    },
+    "pluginOptions": {},
+    "attributes": {
+        "Images": {
+            "type": "media",
+            "multiple": true,
+            "required": false,
+            "allowedTypes": [
+                "images",
+                "files",
+                "videos",
+                "audios"
+            ]
+        },
+        "Name": {
+            "type": "string"
+        },
+        "SKU": {
+            "type": "string"
+        },
+        "price_in_eur": {
+            "type": "float"
+        },
+        "price_in_huf": {
+            "type": "float"
+        },
+        "description": {
+            "type": "richtext"
+        },
+        "order": {
+            "type": "relation",
+            "relation": "manyToOne",
+            "target": "api::order.order",
+            "inversedBy": "products"
+        },
+        "phone_types": {
+            "type": "relation",
+            "relation": "oneToMany",
+            "target": "api::phone-type.phone-type"
+        },
+        "system_types": {
+            "type": "relation",
+            "relation": "oneToMany",
+            "target": "api::system-type.system-type"
+        },
+        "brand": {
+            "type": "relation",
+            "relation": "oneToOne",
+            "target": "api::brand.brand"
+        },
+        "is_require_hub": {
+            "type": "boolean"
+        },
+        "hub": {
+            "type": "relation",
+            "relation": "oneToOne",
+            "target": "api::product.product"
+        },
+        "is_hub": {
+            "type": "boolean"
+        },
+        "product_category": {
+            "type": "relation",
+            "relation": "oneToOne",
+            "target": "api::product-category.product-category"
+        },
+        "product_taxonomy": {
+            "type": "relation",
+            "relation": "oneToOne",
+            "target": "api::product-taxonomy.product-taxonomy"
+        },
+        "Thumbnail": {
+            "type": "media",
+            "multiple": false,
+            "required": false,
+            "allowedTypes": [
+                "images",
+                "files",
+                "videos",
+                "audios"
+            ]
+        },
+        "Product_section_content": {
+            "displayName": "Product_section_content",
+            "type": "component",
+            "repeatable": true,
+            "component": "product-section-content.product-section-content"
+        },
+        "Product_dynamic_section": {
+            "type": "dynamiczone",
+            "components": [
+                "product-dynamic-section.product-dynamic-section"
+            ]
+        },
+        "Product_Attributes": {
+            "displayName": "Product Attributes",
+            "type": "component",
+            "repeatable": false,
+            "component": "product-attributes.product-attributes"
+        }
+    }
+}

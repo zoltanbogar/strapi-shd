@@ -1,0 +1,36 @@
+{
+    "kind": "collectionType",
+    "collectionName": "phone_types",
+    "info": {
+        "singularName": "phone-type",
+        "pluralName": "phone-types",
+        "displayName": "Phone type",
+        "description": ""
+    },
+    "options": {
+        "draftAndPublish": true
+    },
+    "pluginOptions": {},
+    "attributes": {
+        "Type": {
+            "type": "enumeration",
+            "enum": [
+                "ios",
+                "android"
+            ]
+        },
+        "Name": {
+            "type": "string"
+        },
+        "Image": {
+            "allowedTypes": [
+                "images",
+                "files",
+                "videos",
+                "audios"
+            ],
+            "type": "media",
+            "multiple": false
+        }
+    }
+}

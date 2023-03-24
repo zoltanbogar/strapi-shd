@@ -1,0 +1,26 @@
+{
+    "collectionName": "components_brand_section_content_brand_section_contents",
+    "info": {
+        "displayName": "Brand_section_content",
+        "description": ""
+    },
+    "options": {},
+    "attributes": {
+        "Section_Title": {
+            "type": "string"
+        },
+        "Section_body": {
+            "type": "text"
+        },
+        "Section_Image": {
+            "allowedTypes": [
+                "images",
+                "files",
+                "videos",
+                "audios"
+            ],
+            "type": "media",
+            "multiple": false
+        }
+    }
+}

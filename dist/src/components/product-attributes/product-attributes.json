@@ -1,0 +1,35 @@
+{
+    "collectionName": "components_product_attributes_product_attributes",
+    "info": {
+        "displayName": "Product Attributes",
+        "description": ""
+    },
+    "options": {},
+    "attributes": {
+        "is_matter": {
+            "type": "boolean",
+            "default": false
+        },
+        "is_wifi": {
+            "type": "boolean",
+            "default": false
+        },
+        "is_zigbee": {
+            "type": "boolean",
+            "default": false
+        },
+        "is_zwave": {
+            "type": "boolean",
+            "default": false
+        },
+        "is_ble": {
+            "type": "boolean",
+            "default": false
+        },
+        "is_thread": {
+            "type": "boolean",
+            "default": false,
+            "required": false
+        }
+    }
+}

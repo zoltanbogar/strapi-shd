@@ -1,0 +1,25 @@
+{
+    "collectionName": "components_product_dynamic_section_product_dynamic_sections",
+    "info": {
+        "displayName": "Product_dynamic_section"
+    },
+    "options": {},
+    "attributes": {
+        "Section_image": {
+            "allowedTypes": [
+                "images",
+                "files",
+                "videos",
+                "audios"
+            ],
+            "type": "media",
+            "multiple": false
+        },
+        "Section_title": {
+            "type": "string"
+        },
+        "Section_body": {
+            "type": "text"
+        }
+    }
+}

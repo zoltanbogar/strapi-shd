@@ -1,0 +1,43 @@
+{
+    "kind": "collectionType",
+    "collectionName": "homes",
+    "info": {
+        "singularName": "home",
+        "pluralName": "homes",
+        "displayName": "Home",
+        "description": ""
+    },
+    "options": {
+        "draftAndPublish": true
+    },
+    "pluginOptions": {},
+    "attributes": {
+        "owner_name": {
+            "type": "string"
+        },
+        "owner_phone": {
+            "type": "string"
+        },
+        "owner_email": {
+            "type": "email"
+        },
+        "is_newly_built": {
+            "type": "boolean"
+        },
+        "area": {
+            "type": "integer"
+        },
+        "postal_code": {
+            "type": "string"
+        },
+        "city": {
+            "type": "string"
+        },
+        "street": {
+            "type": "string"
+        },
+        "address_misc": {
+            "type": "string"
+        }
+    }
+}
