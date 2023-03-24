@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunksmarthomedoctor_strapi=self.webpackChunksmarthomedoctor_strapi||[]).push([[92],{28465:(r,e,t)=>{t.r(e),t.d(e,{default:()=>a});var s=t(67294),E=t(68547),o=t.n(E),_=t(87751),n=t(67375);const a=()=>s.createElement(E.CheckPagePermissions,{permissions:_.Z.settings["api-tokens"].read},s.createElement(n.Z,null))}}]);
